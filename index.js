@@ -17,17 +17,17 @@ module.exports = function NPCLogger(dispatch) {
 	});	
 	
 	dispatch.hook(`S_SPAWN_NPC`, 11, (event) => {
-        npcs.set(event.gameId, {
-            target: event.target,
-            templateId : event.templateId,
-            relation : event.relation,
-            huntingZoneId : event.huntingZoneId,
-            questInfo : event.questInfo,
-            loc: event.loc,
-            name: event.name,
+		npcs.set(event.gameId, {
+			target: event.target,
+			templateId : event.templateId,
+			relation : event.relation,
+			huntingZoneId : event.huntingZoneId,
+			questInfo : event.questInfo,
+			loc: event.loc,
+			name: event.name,
 			unkn1: event.unkn1
-        });
-    });
+		});
+	});
 		
 	dispatch.hook(`S_DESPAWN_NPC`, 3, (event) => {
 		npcs.delete(event.gameId);
