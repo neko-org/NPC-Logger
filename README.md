@@ -1,4 +1,4 @@
-# Faster-Petrax
+# NPC-Logger
 
 By: Cattalol
 
