@@ -39,7 +39,7 @@ module.exports = function NPCLogger(dispatch) {
 		}		
 		let npc = npcs.get(event.gameId);
 		if (npc){			
-			logMessage(`[C_NPC_CONTACT] gameId: ${event.gameId}; ${npc.templateId}, ${npc.huntingZoneId} `);
+			logMessage(`[C_NPC_CONTACT] gameId: ${event.gameId}; templateId: ${npc.templateId}, huntingZoneId: ${npc.huntingZoneId} `);
 		}
 		else{
 		}
